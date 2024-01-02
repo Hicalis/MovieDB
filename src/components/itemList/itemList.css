@@ -1,0 +1,7 @@
+.films{
+    background: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+margin: 0 15vw;
+
+}
