@@ -1,6 +1,4 @@
-div{
-    background: #F7F7F7;
-    
-
-
+.app {
+  background: #f7f7f7;
+  min-height: 100vh;
 }

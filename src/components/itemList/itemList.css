@@ -1,21 +1,40 @@
-.films{
-    background: #FFF;
-    display: flex;
-    flex-wrap: wrap;
-margin: 0 15vw;
+.films {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15vw;
+  min-height: 100vh;
+}
+
+.load {
+  height: 100vh;
+  width: 100vw;
+}
+
+span{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spin {
+  margin-left: 50%;
+}
+
+.ant-alert  {
+  background-color: #fff2f0;
+  max-height: 100px !important;
+  margin: 0 auto;
 
 }
 
-.load{
-    height: 100vh;
-    width: 100vw;
+input{
+  max-height: 30px;
+  margin: 0 36px !important
 }
 
-.spin{
-    margin-left: 50vw;
-    margin-top: 50vh;
-}
-
-.ant-alert *{
-    background-color: #fff2f0;
+.ant-pagination{
+  margin: 15px auto;
+  
+  margin-bottom: 17px;
 }

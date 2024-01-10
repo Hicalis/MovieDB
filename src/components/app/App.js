@@ -4,7 +4,7 @@ import ItemList from '../itemList/itemList'
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <ItemList />
     </div>
   )
