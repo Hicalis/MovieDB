@@ -37,12 +37,12 @@ span {
 }
 
 .good {
-  width: 1000px;
+  width: 100%;
 }
 
 .spin {
-  margin-left: 50%;
-  margin-top: 50%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 .ant-alert {
