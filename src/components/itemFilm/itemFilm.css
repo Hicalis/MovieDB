@@ -7,31 +7,26 @@
   flex: 0 50%;
   background: #fff;
   max-width: 454px;
- 
-  
 }
-.title{
+.title {
   display: flex;
-  
 }
 
-
-
-.raiting{
+.raiting {
   margin-left: auto;
-width: 18px;
-height: 14px;
-flex-direction: column;
-justify-content: center;
-flex-shrink: 0;
-color: #000;
+  width: 18px;
+  height: 14px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
 
-/* @font-size-sm: 12px */
-font-family: Inter UI;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 183.333% */
+  /* @font-size-sm: 12px */
+  font-family: Inter UI;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 183.333% */
 }
 
 .description {
@@ -44,7 +39,7 @@ img {
   margin-right: 20px;
 }
 
-.circle{
+.circle {
   margin: auto 0;
 }
 
@@ -58,7 +53,6 @@ img {
   font-weight: 400;
   line-height: 28px; /* 140% */
   max-width: 200px;
-  
 }
 
 .release_date {
@@ -71,7 +65,6 @@ img {
   font-weight: 400;
   line-height: 22px; /* 183.333% */
   margin: 0;
-  
 }
 
 .genre {
@@ -119,36 +112,35 @@ img {
   margin-bottom: 7px;
 }
 
-.ant-rate{
-  margin-top:auto;
+.ant-rate {
+  margin-top: auto;
   margin-bottom: 15px;
   font-size: 15px;
 }
 
 @media (max-width: 600px) {
-  .original_title{
-   margin-top: 4px;
-   margin-bottom: 7px;
+  .original_title {
+    margin-top: 4px;
+    margin-bottom: 7px;
   }
-  .release_date{
-   margin-bottom: 7px;
+  .release_date {
+    margin-bottom: 7px;
   }
   .genre > h2 {
-margin-top: 0px;
+    margin-top: 0px;
   }
-    
-  .ant-rate{
-    margin-top:auto;
-    margin-left:auto;
+
+  .ant-rate {
+    margin-top: auto;
+    margin-left: auto;
     margin-right: 10px;
     margin-bottom: 15px;
     font-size: 12px;
   }
 
-  img{
+  img {
     height: 91px;
     width: 60px;
-    margin:  6px 13px 10px 10px ;
-    
+    margin: 6px 13px 10px 10px;
   }
 }
