@@ -2,39 +2,98 @@
   background: #fff;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 15vw;
+  
+  min-width: 75%;
+  max-width: 75%;
   min-height: 100vh;
-}
-
-.load {
+  align-content: flex-start
+  }
+  
+  .load {
   height: 100vh;
   width: 100vw;
-}
-
-span{
-  width: 100%;
+  }
+  
+  span{
+  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
-}
+  }
+  
+  .buttons{
+    
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 30px;
+  }
 
-.spin {
+  .buttons::after {
+    content: "";
+    flex-grow: 1;
+  }
+
+  .ant-btn:first-child{
+    margin-right: 15px;
+   
+  }
+
+ .good{
+  width: 1000px;
+ }
+  
+  .spin {
   margin-left: 50%;
-}
-
-.ant-alert  {
+  margin-top: 50%;
+  }
+  
+  .ant-alert {
   background-color: #fff2f0;
   max-height: 100px !important;
   margin: 0 auto;
-
-}
-
-input{
+  }
+  
+  .anticon-close-circle{
+  width: 24px;
+  }
+  
+  input{
   max-height: 30px;
   margin: 0 36px !important
-}
-
-.ant-pagination{
-  margin: 15px auto;
+  }
   
+  .ant-pagination{
+    
+  margin: 15px auto;
   margin-bottom: 17px;
-}
+  }
+
+  .ant-select-arrow{
+    width: 12px;
+  }
+
+  @media (max-width: 1220px) {
+    .films {
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      
+      min-width: 477px;
+      max-width: 50%;
+      min-height: 100vh;
+      align-content: flex-start
+      }
+  }
+
+  
+  @media (max-width: 600px) {
+    .films {
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      
+      min-width: 100%;
+      min-height: 100vh;
+      align-content: flex-start
+      }
+  }

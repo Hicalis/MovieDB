@@ -7,31 +7,58 @@
   flex: 0 50%;
   background: #fff;
   max-width: 454px;
-  min-width: 454px;
-  min-height: 281px;
-  max-height: 283px;
+ 
+  
+}
+.title{
+  display: flex;
+  
+}
+
+
+
+.raiting{
+  margin-left: auto;
+width: 18px;
+height: 14px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #000;
+
+/* @font-size-sm: 12px */
+font-family: Inter UI;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 183.333% */
 }
 
 .description {
   background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   margin-right: 20px;
 }
 
+.circle{
+  margin: auto 0;
+}
+
 .original_title {
   color: #000;
-
+  margin-right: auto;
   /* H5 - Header 5 */
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 140% */
-  margin-bottom: 7px;
-  margin-top: 10px;
-  padding-right: 20px;
+  max-width: 200px;
+  
 }
 
 .release_date {
@@ -43,8 +70,8 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 183.333% */
-  margin-top: 0;
-  margin-bottom: 7px;
+  margin: 0;
+  
 }
 
 .genre {
@@ -52,6 +79,7 @@ img {
   display: flex;
   margin: 0;
   margin-bottom: 7px;
+  flex-wrap: wrap;
 }
 
 .genre > h2 {
@@ -68,13 +96,14 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 7px;
 }
 
 .overview {
   margin: 0;
   overflow: hidden; /* Обрезаем содержимое */
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 
   color: #000;
@@ -87,4 +116,39 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 183.333% */
+  margin-bottom: 7px;
+}
+
+.ant-rate{
+  margin-top:auto;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .original_title{
+   margin-top: 4px;
+   margin-bottom: 7px;
+  }
+  .release_date{
+   margin-bottom: 7px;
+  }
+  .genre > h2 {
+margin-top: 0px;
+  }
+    
+  .ant-rate{
+    margin-top:auto;
+    margin-left:auto;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+  }
+
+  img{
+    height: 91px;
+    width: 60px;
+    margin:  6px 13px 10px 10px ;
+    
+  }
 }
