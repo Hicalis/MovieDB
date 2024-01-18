@@ -19,9 +19,9 @@ export default class ItemList extends Component {
       currentPage: null,
       label: '',
       isRated: false,
-      oldFilms: [{}],
+      oldFilms: [],
       oldLabel: '',
-      oldPages: null,
+      oldPages: 1,
       idsAndRatingRatedFilms: [{}],
     }
 
@@ -144,15 +144,6 @@ export default class ItemList extends Component {
       .catch(this.onError)
   }
 
-  // componentDidMount(){
-  //   update(titleFilm) {
-  //     this.setState({
-  //       loading: true,
-  //     })
-  //     this.updateFilm(titleFilm)
-  //   }
-  // }
-
   update(titleFilm) {
     this.setState({
       loading: true,
@@ -177,9 +168,9 @@ export default class ItemList extends Component {
 
   render() {
     const { films, loading, error, isEmpty, pages, isRated, label, currentPage } = this.state
-
     let search = <Button onClick={this.backToSearch}>Search</Button>
     let rated = <Button onClick={this.showRatedFilms}>Rated</Button>
+
     if (!isRated) {
       search = (
         <Button type="primary" onClick={this.backToSearch}>

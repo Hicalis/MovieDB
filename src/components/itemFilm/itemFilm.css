@@ -118,8 +118,24 @@ img {
   font-size: 15px;
 }
 
+.top > img {
+  display: none;
+  
+}
+
 @media (max-width: 600px) {
+
+  .description{
+    width: 387px;
+  }
+
+  .info{
+    width: 95%;
+    padding-right: 10px;
+  }
+
   .original_title {
+    
     margin-top: 4px;
     margin-bottom: 7px;
   }
@@ -128,6 +144,11 @@ img {
   }
   .genre > h2 {
     margin-top: 0px;
+  }
+
+  .overview{
+    padding-left: 10px;
+    width: 95%;
   }
 
   .ant-rate {
@@ -139,7 +160,15 @@ img {
   }
 
   img {
-    height: 91px;
+    display: none;
+  }
+  
+  .top{
+    display: flex;
+  }
+
+  .top > img {
+    display: block;
     width: 60px;
     margin: 6px 13px 10px 10px;
   }

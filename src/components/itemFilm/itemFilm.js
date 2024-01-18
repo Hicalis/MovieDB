@@ -64,34 +64,40 @@ export default class ItemList extends Component {
             <div className="film" key={1}>
               <img src={urlImg} alt={original_title} width="189" />
               <div className="description">
-                <div className="title">
-                  <h1 className="original_title">{original_title}</h1>
+                <div className="top">
+                  <img src={urlImg} alt={original_title} width="189" />
+                  <div className="info">
+                    <div className="title">
+                      <h1 className="original_title">{original_title}</h1>
 
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="34"
-                    height="34"
-                    viewBox="0 0 34 34"
-                    fill="none"
-                    className="circle"
-                  >
-                    <circle cx="17" cy="17" r="16" stroke={circleColor} strokeWidth="2" />
-                    <text
-                      x="50%"
-                      y="50%"
-                      textAnchor="middle"
-                      alignmentBaseline="middle"
-                      fill="#000"
-                      fontSize="12"
-                      fontFamily="Inter UI"
-                    >
-                      {vote.toFixed(1)}
-                    </text>
-                  </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        className="circle"
+                      >
+                        <circle cx="17" cy="17" r="16" stroke={circleColor} strokeWidth="2" />
+                        <text
+                          x="50%"
+                          y="50%"
+                          textAnchor="middle"
+                          alignmentBaseline="middle"
+                          fill="#000"
+                          fontSize="12"
+                          fontFamily="Inter UI"
+                        >
+                          {vote.toFixed(1)}
+                        </text>
+                      </svg>
+                    </div>
+
+                    <h2 className="release_date">{date}</h2>
+                    <div className="genre">{genres}</div>
+                  </div>
                 </div>
 
-                <h2 className="release_date">{date}</h2>
-                <div className="genre">{genres}</div>
                 <h2 className="overview">{overview}</h2>
                 <Rate
                   defaultValue={rating}
